@@ -1,0 +1,26 @@
+ACTIVITY 1 – PRACTICAL LEARNING SHEET
+Course: Java Fullstack with Angular – Jan 2026
+Subject: Problem Solving & Data Structures with Java
+Topic: Lists, ArrayList vs LinkedList, Singly Linked List
+Duration: 60–90 Minutes
+ 
+1. Objective
+• Understand differences between ArrayList and LinkedList.
+• Implement List operations practically.
+• Manually implement Singly Linked List.
+• Improve analytical and problem-solving skills.
+
+2. Part 1 – Concept Analysis (Group Activity)
+Instructions: Form groups of 3–4 students and complete the table below.
+Feature	                            ArrayList	        LinkedList
+Internal Structure	                Dynamic Array	    Doubly Linked List
+Access Time Complexity	            O(1)	            O(n)
+Insertion Time Complexity	        O(n)	            O(n)
+Deletion Time Complexity	        O(n)	            O(1) if position is known
+Memory Usage	                    Less	            More
+ 
+Choose the correct data structure for:
+1. Student record system - ArrayList
+2. Browser history - LinkedList
+3. Online shopping cart – ArrayList
+4. Undo/Redo feature – Linked List

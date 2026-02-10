@@ -1,0 +1,12 @@
+MyArrayList list1 = new MyArrayList();
+        list1.add(10);
+        list1.add("hello");
+        list1.add('5');
+        list1.add(20);
+        list1.add("Yellow");
+        list1.add('7');
+        list1.print();
+        list1.remove(2);
+        list1.print();
+        System.out.println(list1.get(3));
+        System.out.println(list1.search(10));
