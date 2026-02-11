@@ -1,0 +1,54 @@
+
+------------Key Concept---------------------------------
+
+| Data Structure | Best at                            | Weak at                      |
+| -------------- | ---------------------------------- | ---------------------------- |
+|   ArrayList    | Fast access using index (`get(i)`) | Slow insert/delete in middle |
+|   LinkedList   | Fast insert/delete anywhere        | Slow searching               |
+
+
+---------Scenario Based Analysis----------------------
+
+1. Real-time chat message storage
+   → LinkedList
+   Reason: Frequent insertions, no need for random access
+   Time Complexity: O(1) insertion
+
+2. Music playlist where songs are frequently reordered
+   → LinkedList
+   Reason: Easy insertion/deletion without shifting elements
+
+3. Student database with frequent searching by index
+   → ArrayList
+   Reason: Fast index-based access
+   Time Complexity: O(1)
+
+4. Browser back and forward navigation
+   → LinkedList
+   Reason: Easy add/remove from both ends
+
+5. Online exam system storing answers sequentially
+   → ArrayList
+   Reason: Sequential storage, fast access, rare deletion
+     
+
+
+    
+ ------------------Viva Questions-----------
+1. Amortized Time Complexity:
+   Average time taken over multiple operations.
+
+2. Why ArrayList resizing is expensive?
+   Because new array is created and old elements are copied.
+
+3. How LinkedList stores elements?
+   As nodes containing data and reference to next node.
+
+4. Singly vs Doubly Linked List:
+   Singly → one pointer
+   Doubly → two pointers (prev + next)
+
+5. Space complexity of LinkedList:
+   Higher than ArrayList due to extra node references.
+     
+
