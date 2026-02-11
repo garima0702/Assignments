@@ -10,7 +10,7 @@ Duration: 60–90 Minutes
 • Manually implement Singly Linked List.
 • Improve analytical and problem-solving skills.
 
-2. Part 1 – Concept Analysis (Group Activity)
+----------------Concept Analysis (Group Activity)--------------
 Instructions: Form groups of 3–4 students and complete the table below.
 Feature	                            ArrayList	        LinkedList
 Internal Structure	                Dynamic Array	    Doubly Linked List
@@ -19,8 +19,34 @@ Insertion Time Complexity	        O(n)	            O(n)
 Deletion Time Complexity	        O(n)	            O(1) if position is known
 Memory Usage	                    Less	            More
  
-Choose the correct data structure for:
+------------Choose the correct data structure for:-------------
 1. Student record system - ArrayList
 2. Browser history - LinkedList
 3. Online shopping cart – ArrayList
 4. Undo/Redo feature – Linked List
+
+
+-------------Viva Questions----------------
+
+
+1. Why is ArrayList access faster?
+Answer:ArrayList stores elements in a continuous array.Because of index
+-based access, any element can be accessed directly using its index, which makes access time O(1).
+
+Q2. Why does LinkedList consume more memory?
+Answer: LinkedList stores each element in a node that contains data
+and a reference to the next node, so extra memory is required for pointers.
+
+Q3. What is the time complexity of insertion at the beginning in SLL?
+Insertion at the beginning of a singly linked list is O(1)
+because only the head reference is updated.
+
+Q4. Difference between Singly Linked List and Doubly Linked List
+Singly Linked List: each node has data and reference to next node only.
+Doubly Linked List: each node has data, reference to previous and next node.
+Doubly linked list uses more memory but allows two-way traversal.
+
+Q5. What is RandomAccess interface?
+RandomAccess is a marker interface in Java that indicates
+a list supports fast index-based (random) access.
+ArrayList implements RandomAccess, LinkedList does not.
