@@ -57,7 +57,7 @@ class Student {
     public int getMarks() {
         return marks;
     }
-
+    @Override
     public String toString() {
         return "Name: " + name + " Marks: " + marks;
     }

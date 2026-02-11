@@ -178,9 +178,10 @@ public class CustomSorting{
     public static void main(String[] args) {
         MyArrayList<Student> list = new MyArrayList<>();
 
-        list.add(new Student(3, "aayush", 21));
-        list.add(new Student(1, "ankit", 19));
-        list.add(new Student(2, "ashwin", 20));
+        
+        list.add(new Student(1, "ankit", 20));
+        list.add(new Student(2, "ashwin", 19));
+        list.add(new Student(3, "aayush", 18));
 
         // Extract age
         DynamicExtractor<Student, Integer> ageExtractor =
@@ -200,6 +201,16 @@ public class CustomSorting{
         UniComparator<String> stringComparator = new UniComparator<>();
 
         list.sort(nameExtractor, stringComparator);
+
+        list.print();
+
+        // Extract id
+        DynamicExtractor<Student,Integer > idExtractor =
+                new DynamicExtractor<>(s -> s.id);
+
+        UniComparator<Integer> intComparator = new UniComparator<>();
+
+        list.sort(idExtractor, intComparator);
 
         list.print();
     }
