@@ -1,0 +1,133 @@
+-------------TIME COMPLEXITY ANALYSIS-----------
+
+Push  → O(1)
+Pop   → O(1)
+Peek  → O(1)
+
+Balanced Parentheses Check → O(n)
+
+Explanation:
+- Push, Pop, Peek operate on top of stack ie constant time.
+- Balanced parentheses requires traversing entire string ie linear time.
+
+
+
+-----------------Conclusion--------------------
+
+Stack is a linear data structure that follows LIFO principle.
+It is widely used in function calls, expression evaluation,
+undo/redo operations, and syntax checking.
+Push and Pop operations are efficient with O(1) complexity.
+Understanding stack helps solve many real-world problems efficiently.
+
+
+
+-------------APPLICATION BASED QUESTIONS-------------------
+
+1 How is Stack used in Function Calls (Call Stack)?
+
+Stack is used in program execution to manage function calls.
+Whenever a function is called, a block of memory is created
+and pushed into the call stack.
+
+This block contains:
+• Local variables
+• Function parameters
+• Return address
+
+When the function finishes execution,
+its memory block is popped from the stack.
+
+Since stack follows LIFO (Last In First Out),
+the last function called is the first one to finish.
+
+Example:
+If main() calls fun1()
+and fun1() calls fun2()
+
+Stack Order (Top to Bottom):
+fun2()
+fun1()
+main()
+
+When fun2() completes, it is removed first.
+This mechanism is known as Call Stack.
+
+
+--------------------------------------
+
+2 How is Stack used in Undo/Redo Operations?
+
+Undo and Redo features in applications like
+text editors use two stacks:
+
+1. Undo Stack
+2. Redo Stack
+
+Working:
+
+• When user performs an action,
+  it is pushed into the Undo stack.
+
+• When user presses Undo,
+  the last action is popped from Undo stack
+  and pushed into Redo stack.
+
+• When user presses Redo,
+  the last undone action is popped from Redo stack
+  and pushed back into Undo stack.
+
+This works efficiently because stack follows
+Last In First Out (LIFO) principle.
+
+
+--------------------------------------
+
+3 Why is Stack useful in Expression Evaluation?
+
+Stack is useful in expression evaluation because:
+
+• It helps maintain operator precedence.
+• It helps handle nested parentheses.
+• It allows storing operands and operators temporarily.
+
+Applications:
+• Infix to Postfix conversion
+• Postfix expression evaluation
+• Checking balanced parentheses
+
+Example:
+In expression A + B * C
+Multiplication (*) has higher precedence,
+so stack helps process it first.
+
+Thus, stack ensures correct order of operations.
+
+
+--------------------------------------
+
+4 Differentiate between Infix, Prefix, and Postfix Expressions
+
+Infix Expression:
+• Operator is written between operands.
+• Example: A + B
+• Requires parentheses to maintain precedence.
+
+Prefix Expression:
+• Operator is written before operands.
+• Example: + A B
+• Does not require parentheses.
+
+Postfix Expression:
+• Operator is written after operands.
+• Example: A B +
+• Does not require parentheses.
+
+Comparison:
+
+Infix  → Operator in middle
+Prefix → Operator at beginning
+Postfix → Operator at end
+
+Prefix and Postfix are easier for computers to evaluate
+because they do not need brackets.
